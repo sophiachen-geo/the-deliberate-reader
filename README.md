@@ -1,6 +1,6 @@
 # The Deliberate Reader
 
-**A curated information ecosystem of 417 media and research sources in 21 languages, from 54 countries of origin, organized into five ecosystem layers.**
+**A curated information ecosystem of 668 media and research organizations in 27 languages, from 78 countries of origin, ranked first on integrity and organized into five ecosystem layers.**
 
 **Live site:** [https://sophiachen-geo.github.io/the-deliberate-reader/](https://sophiachen-geo.github.io/the-deliberate-reader/)
 
@@ -10,13 +10,13 @@
 
 The Deliberate Reader is a personal information architecture built from the premise that how you consume information is as consequential as what you consume. It is not a generic list of good media outlets. It is a scored, weighted, and structurally balanced ecosystem designed for a specific reader profile, using a reproducible methodology that anyone can adapt for their own needs.
 
-Every source was evaluated using an eight-criterion weighted scoring system tailored to the reader’s intake profile, with a portfolio modifier that rewards ecosystem diversity and penalizes redundancy. The result is a living directory of 417 sources, each scored from 0 to 100 for profile fit, organized into five ecosystem layers: **Anchors**, **Specialists**, **Regional**, **Research**, and **Ideas**.
+Every source is scored out of 100. **Integrity prevails**: independence, transparency, non bias, quality and diversity of perspectives carry 75 points. Fit with the reader's intake profile carries 25 points, and a small portfolio modifier rewards what a source adds to the collection as a whole. The result is a living directory of 668 sources organized into five ecosystem layers: **Anchors**, **Specialists**, **Regional**, **Research**, and **Ideas**.
 
 -----
 
 ## How It Was Built
 
-The process followed seven stages, combining structured self-assessment with AI-assisted research, an independent audit and live verification.
+The process followed eight stages, combining structured self-assessment with AI-assisted research, an independent audit and live verification.
 
 **Stage 1: Information Intake Form** The reader completed a 30-question self-assessment covering languages, geographic priorities, disciplinary interests, trust thresholds, preferred outlet types, and explicit anti-preferences. This structured specification became the benchmark against which every recommendation was evaluated.
 
@@ -26,32 +26,47 @@ The process followed seven stages, combining structured self-assessment with AI-
 
 **Stage 4: Claude Opus 4.6 Extended (Scoring and Synthesis)** All outputs from Stages 2 and 3, along with the reader’s existing reading lists, were consolidated and submitted to Claude Opus 4.6, which reconciled the metadata, classified each outlet and produced the first scored directory.
 
-**Stage 5: Claude Opus 5.5 (Audit and New Ranking)** A full audit compared the directory against every source file. It restored 50 outlets that the first deduplication had dropped, merged true duplicates, removed entries that could not be identified as real outlets, separated Research from Ideas, and added hazard science, disaster risk reduction and resilience, urban planning and landscape architecture to the priority themes. Every source was then rescored on all eight criteria plus the portfolio modifier, with each sub score published.
+**Stage 5: Claude Opus 5.5 (Audit and Third Edition)** A full audit compared the directory against every source file. It restored 50 outlets that the first deduplication had dropped, merged true duplicates, removed entries that could not be identified as real outlets, separated Research from Ideas, and added hazard science, disaster risk reduction and resilience, urban planning and landscape architecture to the priority themes. Every source was then rescored on all eight criteria plus the portfolio modifier, with each sub score published.
 
-**Stage 6: Live Verification** On 1 October 2026, every link was requested from an open network. Sites protected against automated traffic were confirmed through web archive captures and Wikidata’s record of official websites. Closed outlets are labelled and linked to what survives of them.
+**Stage 6: Integrity First Rescoring and Expansion (Fourth Edition)** At the reader's direction the weights were rebuilt so that integrity carries 75 of 100 points. Every source was rescored on five integrity criteria against a fixed set of anchor sources, and 251 organizations were added to widen the range of regions, disciplines and viewpoints, including credible voices right of centre, fact checking bodies, statistical agencies, hazard and disaster risk institutions, and public interest newsrooms outside Europe and North America. An independent review pass then checked every new entry for factual errors and overclaims.
 
-**Stage 7: Editorial Review** The scored master list was reviewed for coherence, checking that the portfolio balance approximated the target distribution and that no priority region or discipline was underrepresented.
+**Stage 7: Live Verification** On 1 October 2026, every link and each organization's about and funding pages were requested from an open network. Closures, changes of owner and moved newsrooms found on the sources' own pages were applied. Sites protected against automated traffic were confirmed by other means. Closed outlets are labelled and kept as archives.
+
+**Stage 8: Editorial Review** The scored master list was reviewed for coherence, checking that the portfolio balance approximated the target distribution and that no priority region or discipline was underrepresented.
 
 -----
 
 ## Scoring Methodology
 
-Each source receives a base score out of 100 distributed across eight weighted criteria, followed by a portfolio modifier of up to plus or minus 15 points.
+Each source receives a score out of 100: up to 75 points for integrity, up to 25 points for fit with the reader, and a portfolio modifier of up to plus or minus 5 points.
 
-|Criterion                        |Points|What It Measures                                                                                                                      |
-|---------------------------------|------|--------------------------------------------------------------------------------------------------------------------------------------|
-|Trustworthiness & Method         |30    |Sourcing discipline, correction culture, editorial standards, transparency                                                            |
-|Regional Depth                   |20    |Real on-the-ground intelligence for the reader’s priority geographies                                                                 |
-|Disciplinary / Niche Depth|15|Specialist value in fields such as hazard science, disaster risk, urban planning, landscape architecture, technology, labour, humanitarian affairs, philosophy, climate, arts or digital humanities|
-|Pluralism Quality                |10    |Ability to represent competing views fairly without collapsing into false balance or empty centrism                                   |
-|Theme Fit|10|Alignment with the priority themes: hazard science, disaster risk reduction and resilience, urban planning, landscape architecture, AI and technology, labour and SDG 8, humanitarian systems, mapping, arts, public policy and global political economy|
-|Language & Translation Usefulness|5     |Value for multilingual reading practice or translation access                                                                         |
-|Signal to Noise Ratio            |5     |Density of substantive content relative to filler, opinion churn, or engagement bait                                                  |
-|Format Utility                   |5     |Newsletter quality, explainer depth, archival value, suitability for daily or weekly reading                                          |
+**Integrity (75 points)**
 
-**Portfolio Modifier (plus or minus 15 points).** After computing the base score, a portfolio adjustment is applied. Points are added when a source fills an underserved geography, addresses a disciplinary gap, or increases ownership and institutional diversity through nonprofit, independent, or specialist models. Points are subtracted when a source is largely redundant with stronger outlets already in the portfolio or when it adds prestige without adding genuine perspective.
+|Criterion|Points|What It Measures|
+|---|---|---|
+|Independence|16|Who can tell the newsroom or the authors what to publish: ownership structure, concentration of funding, governance firewalls, documented interference|
+|Transparency|14|Whether the source discloses who owns it, who funds it, who writes it, how it works and when it got things wrong|
+|Non Bias|15|Accuracy record, separation of news from opinion, proportionate language, readiness to report against its own side|
+|Quality|15|Original reporting or research, depth of sourcing, expertise, editing, peer review|
+|Diversity of Perspectives|15|The range of voices inside the source, and what it adds to the range of perspectives the reader can reach|
 
-**Recommended Reading Frequency.** Daily is reserved for a core of twelve sources that fit a 45 to 75 minute routine: three wire services, four Canadian and Quebec anchors, two Taiwan and Sinophone sources, two specialist correctives and one language practice source. Other sources are set to three times a week, weekly, every two weeks or monthly according to their score, never more often than they publish. Journals are read per issue, reference databases as needed, and closed outlets as archives only.
+**Fit With the Reader (25 points)**
+
+|Criterion|Points|What It Measures|
+|---|---|---|
+|Regional Depth|8|Real intelligence from the ground for the reader's priority geographies|
+|Disciplinary Depth|7|Specialist value in fields such as hazard science, disaster risk, urban planning, landscape architecture, cartography, technology, labour, humanitarian affairs, philosophy and the arts|
+|Theme Fit|6|Alignment with the priority themes|
+|Language|2|Value for multilingual reading practice or translation access|
+|Format and Signal|2|Substance over churn; newsletters, explainers, data and archives that are useful in practice|
+
+**Integrity Bands.** Band A is 62 to 75 points, Band B is 55 to 61, Band C is 47 to 54 and Band D is below 47. A declared viewpoint lowers the non bias score even when the work is honest and accurate; it is credited under transparency and diversity instead. Nothing from the reader's original lists was removed: low scorers stay in the directory, labelled.
+
+**What the Scores Are.** Each score is a judgement made by an AI model against a published rubric and fixed anchor sources, using each organization's own about, funding and standards pages wherever they could be read. They are not audits. Where an owner or funder could not be confirmed, the entry says Unconfirmed.
+
+**Portfolio Modifier (plus or minus 5 points).** After the integrity and fit scores are added, a small portfolio adjustment is applied. Points are added when a source fills an underserved geography, addresses a disciplinary gap, or increases ownership and institutional diversity through nonprofit, independent, or specialist models. Points are subtracted when a source is largely redundant with stronger outlets already in the portfolio or when it adds prestige without adding genuine perspective.
+
+**Recommended Reading Frequency.** Daily is reserved for a core of twelve sources that fit a 45 to 75 minute routine: three wire services, four Canadian and Quebec anchors, two Taiwan and Sinophone sources, two specialist correctives and one language practice source. Other sources are set to three times a week, weekly, every two weeks or monthly according to their score, never more often than they publish; three times a week also requires an integrity score of at least 60. Journals are read per issue, reference databases as needed, and closed outlets as archives only.
 
 -----
 
@@ -173,8 +188,10 @@ Each source is classified into one of five layers, each with its own color in th
 
 ## Using the Website
 
-- **Directory:** search by name, topic, region, country or owner; filter by layer, region, language, reading frequency, access, ownership model and status; sort by overall score or by any single criterion.
-- **Source details:** select a source to see its description, what makes it distinct, owner, ownership model, editorial orientation, languages, access, publishing rhythm, recommended reading frequency and the full score breakdown.
+- **Directory first:** the directory opens directly under a short introduction. Search by name, topic, place, owner or language.
+- **Filters:** integrity band, layer, topic, region, country of origin, language, reading frequency, access, ownership model, main funding, organisation type, editorial orientation, medium, publishing rhythm, status and edition, plus minimum score sliders for the overall score, integrity and each integrity criterion. Quick views give one tap access to common combinations.
+- **Sorting:** by overall score, integrity, any single integrity criterion, fit with the reader, or name.
+- **Source details:** select a source to see its description, what makes it distinct, a note on its independence and bias, owner, ownership model, main funding, editorial orientation, languages, topics, access, publishing rhythm, recommended reading frequency and the full score breakdown.
 - **Overview:** every chart bar and every cell of the region by layer matrix filters the directory.
 - **Routine:** a sixty minute daily routine built from the highest scoring sources in each role.
 
