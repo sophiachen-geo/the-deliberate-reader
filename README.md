@@ -1,6 +1,8 @@
 # The Deliberate Reader
 
-**A curated information ecosystem of 355 global media sources across 8 languages, 40+ countries, and 5 ecosystem layers.**
+**A curated information ecosystem of 417 media and research sources in 21 languages, from 54 countries of origin, organized into five ecosystem layers.**
+
+**Live site:** [https://sophiachen-geo.github.io/the-deliberate-reader/](https://sophiachen-geo.github.io/the-deliberate-reader/)
 
 -----
 
@@ -8,13 +10,13 @@
 
 The Deliberate Reader is a personal information architecture built from the premise that how you consume information is as consequential as what you consume. It is not a generic list of good media outlets. It is a scored, weighted, and structurally balanced ecosystem designed for a specific reader profile, using a reproducible methodology that anyone can adapt for their own needs.
 
-Every source was evaluated using an eight-criterion weighted scoring system tailored to the reader’s intake profile, with a portfolio modifier that rewards ecosystem diversity and penalizes redundancy. The result is a living directory of 355 sources, each scored from 0 to 100 for profile fit, organized into five ecosystem layers: **Anchors**, **Specialists**, **Regional**, **Research**, and **Ideas**.
+Every source was evaluated using an eight-criterion weighted scoring system tailored to the reader’s intake profile, with a portfolio modifier that rewards ecosystem diversity and penalizes redundancy. The result is a living directory of 417 sources, each scored from 0 to 100 for profile fit, organized into five ecosystem layers: **Anchors**, **Specialists**, **Regional**, **Research**, and **Ideas**.
 
 -----
 
 ## How It Was Built
 
-The process followed five stages, combining structured self-assessment with AI-assisted research across three platforms.
+The process followed seven stages, combining structured self-assessment with AI-assisted research, an independent audit and live verification.
 
 **Stage 1: Information Intake Form** The reader completed a 30-question self-assessment covering languages, geographic priorities, disciplinary interests, trust thresholds, preferred outlet types, and explicit anti-preferences. This structured specification became the benchmark against which every recommendation was evaluated.
 
@@ -22,9 +24,13 @@ The process followed five stages, combining structured self-assessment with AI-a
 
 **Stage 3: ChatGPT Extended Thinking Deep Research** The same intake profile was independently submitted to ChatGPT’s Extended Thinking Deep Research mode, which generated a parallel set of recommendations. This second pass caught outlets that the first had missed, particularly niche academic journals, emerging digital-native outlets, and non-English specialist sources.
 
-**Stage 4: Claude Opus 4.6 Extended (Scoring and Synthesis)** All outputs from Stages 2 and 3, along with the reader’s existing reading lists, were consolidated and submitted to Claude Opus 4.6 for final processing. Claude deduplicated 355 unique sources, reconciled conflicting metadata, classified each outlet by type and editorial orientation, and computed the profile-specific fit score described in the Scoring Methodology section below.
+**Stage 4: Claude Opus 4.6 Extended (Scoring and Synthesis)** All outputs from Stages 2 and 3, along with the reader’s existing reading lists, were consolidated and submitted to Claude Opus 4.6, which reconciled the metadata, classified each outlet and produced the first scored directory.
 
-**Stage 5: Editorial Review** The scored master list was reviewed for coherence, checking that the portfolio balance approximated the target distribution and that no priority region or discipline was underrepresented.
+**Stage 5: Claude Opus 5.5 (Audit and New Ranking)** A full audit compared the directory against every source file. It restored 50 outlets that the first deduplication had dropped, merged true duplicates, removed entries that could not be identified as real outlets, separated Research from Ideas, and added hazard science, disaster risk reduction and resilience, urban planning and landscape architecture to the priority themes. Every source was then rescored on all eight criteria plus the portfolio modifier, with each sub score published.
+
+**Stage 6: Live Verification** On 1 October 2026, every link was requested from an open network. Sites protected against automated traffic were confirmed through web archive captures and Wikidata’s record of official websites. Closed outlets are labelled and linked to what survives of them.
+
+**Stage 7: Editorial Review** The scored master list was reviewed for coherence, checking that the portfolio balance approximated the target distribution and that no priority region or discipline was underrepresented.
 
 -----
 
@@ -36,14 +42,16 @@ Each source receives a base score out of 100 distributed across eight weighted c
 |---------------------------------|------|--------------------------------------------------------------------------------------------------------------------------------------|
 |Trustworthiness & Method         |30    |Sourcing discipline, correction culture, editorial standards, transparency                                                            |
 |Regional Depth                   |20    |Real on-the-ground intelligence for the reader’s priority geographies                                                                 |
-|Disciplinary / Niche Depth       |15    |Specialist value in areas such as technology, labor, humanitarian affairs, philosophy, climate, arts, or digital humanities           |
+|Disciplinary / Niche Depth|15|Specialist value in fields such as hazard science, disaster risk, urban planning, landscape architecture, technology, labour, humanitarian affairs, philosophy, climate, arts or digital humanities|
 |Pluralism Quality                |10    |Ability to represent competing views fairly without collapsing into false balance or empty centrism                                   |
-|Theme Fit                        |10    |Alignment with priority themes including AI, labor/SDG 8, humanitarian systems, mapping, arts, public policy, global political economy|
+|Theme Fit|10|Alignment with the priority themes: hazard science, disaster risk reduction and resilience, urban planning, landscape architecture, AI and technology, labour and SDG 8, humanitarian systems, mapping, arts, public policy and global political economy|
 |Language & Translation Usefulness|5     |Value for multilingual reading practice or translation access                                                                         |
 |Signal to Noise Ratio            |5     |Density of substantive content relative to filler, opinion churn, or engagement bait                                                  |
 |Format Utility                   |5     |Newsletter quality, explainer depth, archival value, suitability for daily or weekly reading                                          |
 
 **Portfolio Modifier (plus or minus 15 points).** After computing the base score, a portfolio adjustment is applied. Points are added when a source fills an underserved geography, addresses a disciplinary gap, or increases ownership and institutional diversity through nonprofit, independent, or specialist models. Points are subtracted when a source is largely redundant with stronger outlets already in the portfolio or when it adds prestige without adding genuine perspective.
+
+**Recommended Reading Frequency.** Daily is reserved for a core of twelve sources that fit a 45 to 75 minute routine: three wire services, four Canadian and Quebec anchors, two Taiwan and Sinophone sources, two specialist correctives and one language practice source. Other sources are set to three times a week, weekly, every two weeks or monthly according to their score, never more often than they publish. Journals are read per issue, reference databases as needed, and closed outlets as archives only.
 
 -----
 
@@ -92,13 +100,13 @@ How many minutes per day can you realistically dedicate to structured informatio
 How would you like to divide your daily reading time? For example, what percentage should go to quick scanning of headlines, to deep reading of longform or investigative work, to specialist or research sources, and to language practice?
 
 **13. Essential Topics**
-What topics must your ecosystem cover without fail? List the subjects where you need consistent, reliable coverage regardless of what else changes.
+What topics must your ecosystem cover without fail? List the subjects where you need consistent, reliable coverage regardless of what else changes, for example hazard science, disaster risk, urban planning, technology or labour.
 
 **14. Topics You Prefer from Specialist Outlets**
 Which of your essential topics are best served by dedicated specialist publications rather than general-interest outlets? Where does mainstream coverage fall short for your needs?
 
 **15. Disciplinary Lenses You Want Represented**
-Beyond topic areas, what analytical frameworks or disciplinary perspectives do you want your ecosystem to include? Consider political economy, international law, science and technology studies, philosophy, environmental humanities, digital humanities, cartography, architecture, or others.
+Beyond topic areas, what analytical frameworks or disciplinary perspectives do you want your ecosystem to include? Consider political economy, international law, science and technology studies, philosophy, environmental humanities, digital humanities, cartography, urban planning, landscape architecture, architecture, or others.
 
 **16. Preferred Overall Mix**
 What percentage of your ecosystem should come from large reputable institutions (wire services, public broadcasters, papers of record), from independent, specialist, and nonprofit outlets, and from research, academic, and official sources?
@@ -160,10 +168,25 @@ Each source is classified into one of five layers, each with its own color in th
 **Research** sources include academic journals, preprint repositories, international organizations, statistical offices, and data platforms. They provide the primary evidence against which claims from other layers can be verified.
 
 **Ideas** publications are magazines, reviews, and essay platforms devoted to philosophy, political economy, arts, culture, architecture, and cross-disciplinary thinking. They provide the intellectual context that transforms information into understanding.
-l
+
+-----
+
+## Using the Website
+
+- **Directory:** search by name, topic, region, country or owner; filter by layer, region, language, reading frequency, access, ownership model and status; sort by overall score or by any single criterion.
+- **Source details:** select a source to see its description, what makes it distinct, owner, ownership model, editorial orientation, languages, access, publishing rhythm, recommended reading frequency and the full score breakdown.
+- **Overview:** every chart bar and every cell of the region by layer matrix filters the directory.
+- **Routine:** a sixty minute daily routine built from the highest scoring sources in each role.
+
+## Data Files
+
+The full dataset is published with the site so it can be reused, audited or rescored:
+
+- [`data/outlets.csv`](data/outlets.csv): one row per source with every field and sub score.
+- [`data/outlets.json`](data/outlets.json): the same data as JSON.
 
 -----
 
 ## License
 
-This project is shared for personal and educational use. The scoring methodology and curation reflect a specific reader profile and are not intended as universal quality rankings. Adapt the methodology to your own priorities.
+This project is released under the GNU General Public License v3.0; see [LICENSE](LICENSE). The scoring methodology and curation reflect a specific reader profile and are not intended as universal quality rankings. Adapt the methodology to your own priorities.
